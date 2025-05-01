@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alarm=() => console.log(`Wake up ${new Date()}`);
+        setTimeout(alarm,2000);
+        console.log("Alarm set!");
+        setInterval(alarm,10000);
+    </script>
+</body>
+</html>

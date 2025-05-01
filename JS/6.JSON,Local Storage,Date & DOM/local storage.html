@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("Name","Paresh");
+        localStorage.setItem("Number","16");
+        console.log(localStorage.getItem("Name"));
+        let vehicle= {
+            name:"Benz",
+            prize:1000000,
+            rating:9.8,
+        };
+        localStorage.setItem("vehicle",JSON.stringify(vehicle));
+        console.log(localStorage.getItem("vehicle"));
+        localStorage.removeItem("Number");
+    </script>
+</body>
+</html>
